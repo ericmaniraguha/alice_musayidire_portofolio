@@ -58,12 +58,16 @@ jobs:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       #     publish_dir: ./dist
       
-      # 2. Netlify (Needs NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID in GitHub Secrets)
-      # - name: Deploy to Netlify
-      #   uses: nwtgck/actions-netlify@v2.0
-      #   with:
-      #     publish-dir: './dist'
-      #     production-deploy: true
-      #   env:
-      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      # 2. Netlify (Recommended)
+      # To enable: Add NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID to GitHub Secrets
+      - name: Deploy to Netlify
+        if: github.ref == 'refs/heads/main'
+        uses: nwtgck/actions-netlify@v2.0
+        with:
+          publish-dir: './dist'
+          production-deploy: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          enable-commit-comment: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
