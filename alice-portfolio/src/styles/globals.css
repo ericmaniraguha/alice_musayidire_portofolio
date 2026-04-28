@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+/* ── Theme Definitions ───────────────────────────────── */
+@theme {
+  --color-primary: #4A6CF7;
+  --color-primary-dark: #3754D1;
+  --color-secondary: #764ba2;
+  --color-accent: #f093fb;
+  --color-accent-warm: #f5576c;
+
+  /* Default (Light Grey) Variables */
+  --color-surface: #E4E3DB;
+  --color-surface-light: #F0EFE9;
+  --color-surface-card: rgba(255, 255, 255, 0.5);
+  --color-text-primary: #1A1918;
+  --color-text-secondary: #4A4947;
+  --color-text-muted: #7A7977;
+  --color-border: rgba(0, 0, 0, 0.06);
+  --color-glass: rgba(255, 255, 255, 0.3);
+  --color-glass-border: rgba(255, 255, 255, 0.5);
+  --color-translucent-bg: rgba(0, 0, 0, 0.05); /* Used for tags, progress bars etc */
+
+  --font-family-display: "Poppins", sans-serif;
+  --font-family-body: "Inter", sans-serif;
+}
+
+/* ── Dark Mode Overrides ──────────────────────────────── */
+.dark {
+  --color-surface: #0F0F12;
+  --color-surface-light: #1A191D;
+  --color-surface-card: rgba(255, 255, 255, 0.03);
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A1A1A6;
+  --color-text-muted: #6B6B71;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-glass: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-translucent-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* ── Base Reset ───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-body);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── Glass Card ───────────────────────────────────────── */
+.glass-card {
+  background: var(--color-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.dark .glass-card {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* ── Gradient Text ────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Section ──────────────────────────────────────────── */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+/* ── Glow effects ─────────────────────────────────────── */
+.glow-primary {
+  box-shadow: 0 0 40px rgba(74, 108, 247, 0.1), 0 0 80px rgba(74, 108, 247, 0.05);
+}
+
+/* Form inputs */
+input, textarea {
+  background: var(--color-surface-light) !important;
+  color: var(--color-text-primary) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 2px rgba(74, 108, 247, 0.2);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-surface); }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 3px; }
