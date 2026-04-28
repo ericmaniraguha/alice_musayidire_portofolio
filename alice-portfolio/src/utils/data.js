@@ -299,7 +299,22 @@ export const blogs = [
     category: 'Compliance',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800',
     readTime: '5 min read',
-    url: '#',
+    content: {
+      overview: 'Donor compliance is a cornerstone of financial management in international NGOs. Organizations funded by institutions such as USAID, EU, World Bank, and UN agencies must maintain strict adherence to financial reporting standards, procurement rules, and audit requirements. In my experience managing multi-donor portfolios exceeding USD 10M, compliance is not only a regulatory obligation but also a key mechanism for financial risk control, donor trust, and operational sustainability.',
+      points: [
+        { title: 'Strengthening Internal Control Systems', description: 'Strong internal controls ensure segregation of duties, approval hierarchies, and fraud prevention mechanisms. Automated ERP systems such as Oracle PeopleSoft significantly improve transparency and traceability.' },
+        { title: 'Donor-Specific Financial Reporting', description: 'Each donor has unique requirements (e.g., USAID cost principles, EU eligibility rules). Harmonizing internal reporting systems with donor frameworks ensures accuracy and avoids disallowable costs.' },
+        { title: 'Continuous Audit Readiness', description: 'Rather than annual preparation, organizations should adopt continuous audit readiness through monthly reconciliations, documentation tracking, and compliance dashboards.' },
+        { title: 'Sub-Award Monitoring & Partner Capacity Building', description: 'Sub-recipients often represent high compliance risk. Continuous training and monitoring improve reporting accuracy and reduce financial irregularities.' },
+      ],
+      conclusion: 'Effective donor compliance is achieved through systems, discipline, and continuous oversight. It strengthens transparency and ensures long-term funding sustainability.',
+      references: [
+        { label: 'USAID (2023) – Uniform Administrative Requirements', url: 'https://www.usaid.gov' },
+        { label: 'European Commission (2022) – PRAG Procurement Rules', url: 'https://ec.europa.eu' },
+        { label: 'World Bank (2021) – FM Practices in Development Projects', url: 'https://www.worldbank.org' },
+        { label: 'IFAC – Public Sector Financial Management Guidelines', url: 'https://www.ifac.org' },
+      ],
+    },
   },
   {
     id: 2,
@@ -309,7 +324,22 @@ export const blogs = [
     category: 'Fintech',
     image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800',
     readTime: '4 min read',
-    url: '#',
+    content: {
+      overview: 'Rwanda’s financial ecosystem is rapidly evolving through fintech innovation, mobile money expansion, and digital transformation of financial systems. These changes are reshaping how businesses manage payments, reporting, and financial operations.',
+      points: [
+        { title: 'Growth of Fintech Ecosystems', description: 'Fintech platforms are enabling faster, cheaper, and more accessible financial services for SMEs and corporates.' },
+        { title: 'Mobile Money Integration', description: 'Mobile money systems such as MTN MoMo and Airtel Money have significantly improved liquidity management and cash flow efficiency.' },
+        { title: 'Shift to ERP and Cloud-Based Systems', description: 'Organizations are transitioning from manual accounting systems to ERP solutions (SAP, Oracle), improving accuracy, automation, and reporting speed.' },
+        { title: 'Data-Driven Financial Decision Making', description: 'Financial analytics tools such as Power BI are enabling real-time dashboards, improving forecasting and strategic planning.' },
+      ],
+      conclusion: 'Digital finance is a key driver of economic transformation in Rwanda. Organizations that adopt technology-driven financial systems gain significant efficiency and competitiveness advantages.',
+      references: [
+        { label: 'National Bank of Rwanda (BNR) – Stability Reports', url: 'https://www.bnr.rw' },
+        { label: 'World Bank (2023) – Digital Economy for Africa', url: 'https://www.worldbank.org' },
+        { label: 'GSMA (2022) – State of Mobile Money in Sub-Saharan Africa', url: 'https://www.gsma.com' },
+        { label: 'IMF (2023) – Fintech in Emerging Markets', url: 'https://www.imf.org' },
+      ],
+    },
   },
   {
     id: 3,
@@ -319,7 +349,47 @@ export const blogs = [
     category: 'Budgeting',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800',
     readTime: '6 min read',
-    url: '#',
+    content: {
+      overview: 'Large-scale development projects require structured financial planning, strong forecasting models, and continuous variance monitoring. Budgeting is not a static process—it is a dynamic system for financial control and decision-making.',
+      points: [
+        { title: 'Strategic Budget Design', description: 'Budgets must align with project outcomes, donor expectations, and operational realities. Poor design leads to inefficiencies and funding gaps.' },
+        { title: 'KPI-Based Monitoring Systems', description: 'Key indicators such as burn rate, cost per output, and variance percentage help identify financial risks early.' },
+        { title: 'Variance Analysis & Financial Control', description: 'Regular comparison between planned and actual expenditure ensures early corrective action and financial discipline.' },
+        { title: 'Cross-Functional Budget Integration', description: 'Budgeting requires collaboration between finance, procurement, and program teams for accurate forecasting and execution.' },
+      ],
+      conclusion: 'Effective budgeting is a continuous cycle of planning, monitoring, and adjustment. It is essential for ensuring financial accountability and project success.',
+      references: [
+        { label: 'IFAC (2022) – Public Sector Budgeting', url: 'https://www.ifac.org' },
+        { label: 'OECD (2021) – Budgeting Practices in Projects', url: 'https://www.oecd.org' },
+        { label: 'World Bank (2022) – Results-Based Budgeting', url: 'https://www.worldbank.org' },
+        { label: 'IMF (2023) – PFM Frameworks', url: 'https://www.imf.org' },
+      ],
+    },
+  },
+  {
+    id: 4,
+    title: 'Data Privacy and Data Governance in Finance',
+    excerpt: 'Exploring the intersection of financial management, Rwanda’s Data Protection Law, and GDPR in a digital-first economy.',
+    date: 'May 5, 2024',
+    category: 'Data Governance',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800',
+    readTime: '7 min read',
+    content: {
+      overview: 'In today’s digital financial ecosystem, data has become one of the most valuable assets in financial management. However, this reliance introduces significant risks related to data privacy, governance, and regulatory compliance. In Rwanda and globally, strong legal frameworks such as the Rwanda Data Protection and Privacy Law (Law No. 058/2021) and the EU GDPR are shaping how financial data must be handled.',
+      points: [
+        { title: 'Understanding Data Governance', description: 'Policies and standards ensuring financial data is accurate, secure, transparent, and legally compliant. Essential for auditable financial reports and minimizing fraud risks.' },
+        { title: 'Legal Frameworks: Rwanda Law & GDPR', description: 'Rwanda’s Law No. 058/2021 and the EU GDPR establish strict principles for data minimization, consent-based processing, and mandatory breach reporting.' },
+        { title: 'Governance in Financial Systems', description: 'Applied through centralized ERP systems (Oracle, SAP), internal controls like segregation of duties, and rigorous financial reporting integrity.' },
+        { title: 'The Strategic Role of Finance Professionals', description: 'Modern accountants act as data custodians and compliance guardians, ensuring ethical use of data and long-term funding sustainability.' },
+      ],
+      conclusion: 'Data privacy and governance are now central pillars of financial management. Organizations that prioritize these systems will build lasting trust, transparency, and financial sustainability.',
+      references: [
+        { label: 'Rwanda Data Protection Law (No. 058/2021)', url: 'https://www.risa.gov.rw/data-protection-and-privacy-law' },
+        { label: 'Rwanda Open Data Portal Initiative', url: 'https://www.minict.gov.rw/news-detail/a-rwandan-open-data-portal' },
+        { label: 'EU GDPR Official Framework', url: 'https://gdpr-info.eu' },
+        { label: 'World Bank – Data Governance in PFM', url: 'https://www.worldbank.org' },
+      ],
+    },
   },
 ];
 
