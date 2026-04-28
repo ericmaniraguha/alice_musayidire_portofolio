@@ -6,6 +6,7 @@ import Projects from '../components/Projects';
 import Education from '../components/Education';
 import Languages from '../components/Languages';
 import CVSection from '../components/CVSection';
+import Blogs from '../components/Blogs';
 import Contact from '../components/Contact';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Education />
       <Languages />
       <CVSection />
+      <Blogs />
       <Contact />
     </>
   );

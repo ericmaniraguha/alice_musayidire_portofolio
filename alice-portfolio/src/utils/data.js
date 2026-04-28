@@ -289,6 +289,40 @@ export const languages = [
   { name: 'Swahili', level: 'Fluent', proficiency: 90, flag: '🇹🇿' },
 ];
 
+// ── Blogs Data ───────────────────────────────────────────
+export const blogs = [
+  {
+    id: 1,
+    title: 'Navigating Donor Compliance in International NGOs',
+    excerpt: 'Key strategies for maintaining transparency and ensuring full compliance with USAID and EU funding requirements.',
+    date: 'April 15, 2024',
+    category: 'Compliance',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800',
+    readTime: '5 min read',
+    url: '#',
+  },
+  {
+    id: 2,
+    title: 'The Future of Digital Finance in Rwanda’s Private Sector',
+    excerpt: 'Exploring how fintech and mobile money solutions are transforming operational efficiency for engineering and construction firms.',
+    date: 'March 22, 2024',
+    category: 'Fintech',
+    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800',
+    readTime: '4 min read',
+    url: '#',
+  },
+  {
+    id: 3,
+    title: 'Effective Budgeting for Multi-Million Dollar Projects',
+    excerpt: 'A deep dive into KPI-driven financial monitoring and variance reduction techniques for large-scale social impact projects.',
+    date: 'February 10, 2024',
+    category: 'Budgeting',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800',
+    readTime: '6 min read',
+    url: '#',
+  },
+];
+
 // ── KPI Data ─────────────────────────────────────────────
 export const kpiData = [
   { label: 'Years Experience', value: 12, suffix: '+', icon: '📅' },

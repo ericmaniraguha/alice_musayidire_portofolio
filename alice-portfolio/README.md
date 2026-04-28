@@ -1,16 +1,55 @@
-# React + Vite
+# Alice Musayidire Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, high-performance professional portfolio built for Alice Musayidire, an Accounting & Financial Management expert.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Interactive CV Viewer**: Optimized PDF reading experience with smooth expansion/collapse.
+- **Dual Theme Support**: Seamless switching between "White Grey" and "Premium Dark" modes.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
+- **Dynamic KPIs**: Animated counters showcasing 12+ years of expertise.
+- **CI/CD Integrated**: Automated builds and checks via GitHub Actions.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React.js](https://reactjs.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [React Icons (Feather)](https://react-icons.github.io/react-icons/icons/fi/)
 
-## Expanding the ESLint configuration
+## ⚡ Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install Dependencies**:
+   ```bash
+   cd alice-portfolio
+   npm install
+   ```
+
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Build for Production**:
+   ```bash
+   npm run build
+   ```
+
+## 🤖 CI/CD Pipeline
+
+The project includes a GitHub Actions workflow in `.github/workflows/deploy.yml` that:
+1. Triggers on every push to `main`.
+2. Installs dependencies and runs a production build.
+3. Uploads the `dist` folder as an artifact.
+
+### Deployment Setup
+
+To enable auto-deployment, uncomment the relevant section in `deploy.yml`:
+
+- **GitHub Pages**: Ensure GitHub Pages is set to deploy from a branch (e.g. `gh-pages`).
+- **Netlify**: Add `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` to your GitHub Repository Secrets.
+
+## 📄 License
+
+This project is private and intended for the professional portfolio of Alice Musayidire.

@@ -15,6 +15,7 @@ export const NAV_LINKS = [
   { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Finance Skills' },
   { id: 'projects', label: 'Portfolio' },
+  { id: 'blogs', label: 'Blogs' },
   { id: 'education', label: 'Education' },
   { id: 'contact', label: 'Contact' },
 ];
